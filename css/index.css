@@ -35,6 +35,20 @@ nav .nav-items h5 {
   color: rgb(245, 109, 19);
   font-weight: 700;
 }
+nav .fa-bars{
+  display: none;
+}
+@media only screen and (max-width: 720px) {
+  nav .nav-items{
+    display: none;
+  }
+  nav .actions{
+    display: none;
+  }
+  nav .fa-bars{
+    display: block;
+  }
+}
 /* left section */
 .intro-section {
   display: flex;
@@ -136,4 +150,31 @@ nav .nav-items h5 {
   position: relative;
   top: 50%;
   left: 290px;
+}
+
+@media only screen and (max-width: 720px){
+  .intro-section{
+    flex-direction: column;
+  }
+  .left-section{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25rem;
+  }
+  .right-section{
+    position: absolute;
+  }
+  .dots{
+    position: relative;
+    top: 260px;
+  }
+  .right-section button {
+    position: relative;
+    top: 260px;
+    margin: 0 auto;
+  }
+  .sub-headlines .sub-headline img {
+    margin: 0 auto;
+    
+  }
 }
